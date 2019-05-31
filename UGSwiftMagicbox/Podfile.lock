@@ -1,0 +1,94 @@
+PODS:
+  - BSBacktraceLogger (0.0.1)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - CocoaLumberjack/Swift (3.5.3):
+    - CocoaLumberjack/Core
+  - DoraemonKit/Core (1.1.8):
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithGPS (1.1.8):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithLoad (1.1.8):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithLogger (1.1.8):
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - fishhook (0.2)
+  - MBProgressHUD (1.1.0)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SDWebImage (5.0.3):
+    - SDWebImage/Core (= 5.0.3)
+  - SDWebImage/Core (5.0.3)
+  - SnapKit (5.0.0)
+  - UICountingLabel (1.2.0)
+  - "UITextView+Placeholder (1.2.1)"
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - DoraemonKit/Core (~> 1.1.8)
+  - DoraemonKit/WithGPS (~> 1.1.8)
+  - DoraemonKit/WithLoad (~> 1.1.8)
+  - DoraemonKit/WithLogger (~> 1.1.8)
+  - MBProgressHUD
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - DoraemonKit
+    - fishhook
+    - MBProgressHUD
+    - PNChart
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - UICountingLabel
+    - "UITextView+Placeholder"
+
+SPEC CHECKSUMS:
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  DoraemonKit: 63d23b938b11ae2c04c8c2caba2112da7d5bda83
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+
+PODFILE CHECKSUM: dc503b7ca100b14e74b4677204fa6fb64f661c55
+
+COCOAPODS: 1.5.3

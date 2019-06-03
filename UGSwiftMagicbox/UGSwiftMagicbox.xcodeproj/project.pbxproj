@@ -60,6 +60,8 @@
 		2C5B89DA22A13CBF00AF2C8D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B89C722A13CBE00AF2C8D /* 3.jpg */; };
 		2C5B89DB22A13CBF00AF2C8D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B89C822A13CBE00AF2C8D /* 1.jpg */; };
 		2C5B89DC22A13CBF00AF2C8D /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B89C922A13CBE00AF2C8D /* 0.jpg */; };
+		2C5B89DF22A4ADCD00AF2C8D /* DorTextFiedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B89DE22A4ADCD00AF2C8D /* DorTextFiedVC.swift */; };
+		2C5B89E122A4B15C00AF2C8D /* NicknameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */; };
 		7366935EF91C3A76D1888917 /* Pods_UGSwiftMagicbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +143,8 @@
 		2C5B89C722A13CBE00AF2C8D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		2C5B89C822A13CBE00AF2C8D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		2C5B89C922A13CBE00AF2C8D /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		2C5B89DE22A4ADCD00AF2C8D /* DorTextFiedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DorTextFiedVC.swift; sourceTree = "<group>"; };
+		2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicknameInputView.swift; sourceTree = "<group>"; };
 		380100BCF95E14027631CCDF /* Pods-UGSwiftMagicbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGSwiftMagicbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox.debug.xcconfig"; sourceTree = "<group>"; };
 		CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGSwiftMagicbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -275,6 +279,7 @@
 		2C5B895B22A0E5FC00AF2C8D /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */,
 				2C5B895C22A0E5FC00AF2C8D /* UGMessage.swift */,
 				2C5B895D22A0E5FC00AF2C8D /* UIView+exteension.swift */,
 			);
@@ -358,6 +363,7 @@
 				2C5B897922A0E5FD00AF2C8D /* DormsgTestVC.swift */,
 				2C5B897A22A0E5FD00AF2C8D /* ConfigDoraemon.swift */,
 				2C5B897B22A0E5FD00AF2C8D /* DorUITest.swift */,
+				2C5B89DE22A4ADCD00AF2C8D /* DorTextFiedVC.swift */,
 			);
 			path = Doraemon;
 			sourceTree = "<group>";
@@ -651,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5B899F22A0E5FE00AF2C8D /* VideoCollectionViewCell.swift in Sources */,
+				2C5B89DF22A4ADCD00AF2C8D /* DorTextFiedVC.swift in Sources */,
 				2C5B899822A0E5FE00AF2C8D /* LHCenterTabBar.swift in Sources */,
 				2C5B899622A0E5FE00AF2C8D /* UIView+exteension.swift in Sources */,
 				2C5B899E22A0E5FE00AF2C8D /* RecommendCollectionCell.swift in Sources */,
@@ -670,6 +677,7 @@
 				2C5B89A322A0E5FE00AF2C8D /* String+Extension.swift in Sources */,
 				2C5B89A422A0E5FE00AF2C8D /* UINav+Extension.swift in Sources */,
 				2C5B89A022A0E5FE00AF2C8D /* Color+Exitension.swift in Sources */,
+				2C5B89E122A4B15C00AF2C8D /* NicknameInputView.swift in Sources */,
 				2C5B89A122A0E5FE00AF2C8D /* UIFont_EX.swift in Sources */,
 				2C5B89AB22A0E5FE00AF2C8D /* CentanimateView.swift in Sources */,
 				2C5B89A522A0E5FE00AF2C8D /* NSobject+extension.swift in Sources */,

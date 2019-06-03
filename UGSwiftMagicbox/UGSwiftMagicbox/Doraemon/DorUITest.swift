@@ -40,6 +40,19 @@ class DorUGPageviewController: NSObject,DoraemonPluginProtocol{
     
 }
 
+// 输入框长度限制
+class DorTextFied: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        
+        let viewcontroller = DorTextFiedVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+    
+}
+
+
+
 
 
 

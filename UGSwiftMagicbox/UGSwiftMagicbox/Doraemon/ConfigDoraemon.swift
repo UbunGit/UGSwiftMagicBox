@@ -19,6 +19,8 @@ public func configDoraemon() -> () {
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "动画", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorCommonView", atModule: "UI")
     
+     DoraemonManager.shareInstance().addPlugin(withTitle: "输入限制", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorTextFied", atModule: "UI")
+    
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "突出tabbar", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorUGTabBarController", atModule: "功能测试")
     

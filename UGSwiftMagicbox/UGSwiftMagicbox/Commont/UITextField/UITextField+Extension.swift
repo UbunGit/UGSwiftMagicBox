@@ -51,3 +51,25 @@ extension UITextField{
         center.removeObserver(self, name: UITextField.textDidChangeNotification, object: nil)
     }
 }
+
+//设置 placeholder
+extension UITextField {
+    
+    /// 设置 placeholder 富文本
+    ///
+    /// - Parameters:
+    ///   - placeholder: 占位符
+    ///   - font: 字体
+    ///   - color: 颜色
+    func setPlaceholder(placeholder: String, font: UIFont?=nil, color: UIColor?=nil) {
+        var attributes: [NSAttributedString.Key: Any] = [:]
+        if let placeholderFont =  font {
+            attributes[NSAttributedString.Key.font] = placeholderFont
+        }
+        if let placeholderColor = color {
+            attributes[NSAttributedString.Key.foregroundColor] = placeholderColor
+        }
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
+    }
+    
+}

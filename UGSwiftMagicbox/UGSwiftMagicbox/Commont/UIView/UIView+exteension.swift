@@ -47,6 +47,9 @@ public extension UIView {
 
 extension UIView {
     
+    /**
+     * view上弹框
+     */
     public func alert(aview:UIView){
         
         let cancelview = UIView()

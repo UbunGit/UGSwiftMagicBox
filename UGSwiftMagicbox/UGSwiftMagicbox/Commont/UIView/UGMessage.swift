@@ -73,19 +73,28 @@ public enum GSMessageOption {
 
 extension UIView {
 
+    /**
+     * 类方法 window上弹出info提示，默认在底部
+     */
     class open func ug_msginfo(_ text: String,
                             options: [GSMessageOption]? = [.position(.bottom)]){
 
         let window = UIApplication.shared.keyWindow
         window?.ug_msginfo(text, options: options)
     }
-
+    
+    /**
+     * 类方法 window上弹出error提示，默认在底部
+     */
     class open func ug_msgerror(_ text: String,
                              options: [GSMessageOption]? = [.position(.bottom)]){
         let window = UIApplication.shared.keyWindow
         window?.ug_msgerror(text, options: options)
     }
-
+    
+    /**
+     * 类方法 window上弹出success提示，默认在底部
+     */
     class open func ug_msgsuccess(_ text: String,
                                options: [GSMessageOption]? = [.position(.bottom)]){
         let window = UIApplication.shared.keyWindow
@@ -94,17 +103,23 @@ extension UIView {
 
     
 
-    
+    /**
+     * view上弹出info提示，默认在底部
+     */
     open func ug_msginfo(_ text: String,
                   options: [GSMessageOption]? = [.position(.bottom)]){
         GSMessage.showMessageAddedTo(text: text as String, type: .info, options: options, inView: self, inViewController: nil)
     }
-    
+    /**
+     * view上弹出error提示，默认在顶
+     */
     open func ug_msgerror(_ text: String,
                       options: [GSMessageOption]? = [.position(.top)]){
         GSMessage.showMessageAddedTo(text: text as String, type: .error, options: options, inView: self, inViewController: nil)
     }
-    
+    /**
+     * view上弹出success提示，默认底
+     */
     open func ug_msgsuccess(_ text: String,
                       options: [GSMessageOption]? = [.position(.bottom)]){
         

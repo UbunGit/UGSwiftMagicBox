@@ -1,7 +1,7 @@
 //
 //  NicknameInputView.swift
 //  FlowerLive
-//  完善资料/昵称输入框
+//  昵称输入框
 //  Created by admin on 2019/5/22.
 //  Copyright © 2019 lhwl-cee. All rights reserved.
 //

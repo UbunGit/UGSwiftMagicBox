@@ -3,68 +3,9 @@
 ## UI相关
 
 ### UIView
-#### msg
-项目中常用弹框，在view的顶部或下部谈起，可配置样式。主要方法有：
-```
-extension UIView {
+#### msg [具体文档](./UGSwiftMagicbox/Document/msg.md)
 
-    /**
-     * 类方法 window上弹出info提示，默认在底部
-     */
-    class open func ug_msginfo(_ text: String,
-                            options: [GSMessageOption]? = [.position(.bottom)]){
-
-        let window = UIApplication.shared.keyWindow
-        window?.ug_msginfo(text, options: options)
-    }
-    
-    /**
-     * 类方法 window上弹出error提示，默认在底部
-     */
-    class open func ug_msgerror(_ text: String,
-                             options: [GSMessageOption]? = [.position(.bottom)]){
-        let window = UIApplication.shared.keyWindow
-        window?.ug_msgerror(text, options: options)
-    }
-    
-    /**
-     * 类方法 window上弹出success提示，默认在底部
-     */
-    class open func ug_msgsuccess(_ text: String,
-                               options: [GSMessageOption]? = [.position(.bottom)]){
-        let window = UIApplication.shared.keyWindow
-        window?.ug_msgsuccess(text, options: options)
-    }
-
-    
-
-    /**
-     * view上弹出info提示，默认在底部
-     */
-    open func ug_msginfo(_ text: String,
-                  options: [GSMessageOption]? = [.position(.bottom)]){
-        GSMessage.showMessageAddedTo(text: text as String, type: .info, options: options, inView: self, inViewController: nil)
-    }
-    /**
-     * view上弹出error提示，默认在顶
-     */
-    open func ug_msgerror(_ text: String,
-                      options: [GSMessageOption]? = [.position(.top)]){
-        GSMessage.showMessageAddedTo(text: text as String, type: .error, options: options, inView: self, inViewController: nil)
-    }
-    /**
-     * view上弹出success提示，默认底
-     */
-    open func ug_msgsuccess(_ text: String,
-                      options: [GSMessageOption]? = [.position(.bottom)]){
-        
-        GSMessage.showMessageAddedTo(text: text as String, type: .success, options: options, inView: self, inViewController: nil)
-    }
-```
-调用示列
-``` 
-view.ug_msgerror("这是一条error消息")
-```
+项目中常用弹框，在view的顶部或下部弹出，可根据不同的app设置不同的样式样式
 
 #### alert
 ```
@@ -125,3 +66,16 @@ func cornerImage(size:CGSize, radius:CGFloat, fillColor: UIColor, completion:@es
 ### String
 
 ## 常用功能
+
+### 突出的tabbar
+
+<img src="./UGSwiftMagicbox/Document/img/tabbar.jpg" width = 320/>
+
+### pageView
+
+<img src="./UGSwiftMagicbox/Document/img/pageView.jpg" width = 320 />
+
+### 启动广告
+
+<img src="./UGSwiftMagicbox/Document/img/launch.jpg" width = 320 />
+<img src="./UGSwiftMagicbox/Document/img/launchvideo.jpg" width = 320 />

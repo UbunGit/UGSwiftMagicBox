@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configDoraemon()
         //配置日志
         configLog()
+        let launchView = LaunchView(frame: (window?.bounds)!)
+        launchView.setupUI()
         return true
     }
 

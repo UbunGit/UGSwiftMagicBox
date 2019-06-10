@@ -26,6 +26,10 @@ public func configDoraemon() -> () {
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "pageview", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorUGPageviewController", atModule: "功能测试")
     
+    DoraemonManager.shareInstance().addPlugin(withTitle: "启动视频", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorLaunchViewvideo", atModule: "功能测试")
+    
+    DoraemonManager.shareInstance().addPlugin(withTitle: "启动图片", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorLaunchView", atModule: "功能测试")
+    
     DoraemonManager.shareInstance().addPlugin(withTitle: "注销", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.Dorsinout", atModule: "功能测试")
   
 }

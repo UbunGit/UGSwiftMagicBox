@@ -63,6 +63,8 @@
 		2C5B89DF22A4ADCD00AF2C8D /* DorTextFiedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B89DE22A4ADCD00AF2C8D /* DorTextFiedVC.swift */; };
 		2C5B89E122A4B15C00AF2C8D /* NicknameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */; };
 		7366935EF91C3A76D1888917 /* Pods_UGSwiftMagicbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */; };
+		8450E42E22ADEC4800461802 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E42D22ADEC4800461802 /* LaunchView.swift */; };
+		8450E43622ADF9F300461802 /* 000.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8450E43522ADF9F200461802 /* 000.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,8 @@
 		2C5B89DE22A4ADCD00AF2C8D /* DorTextFiedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DorTextFiedVC.swift; sourceTree = "<group>"; };
 		2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicknameInputView.swift; sourceTree = "<group>"; };
 		380100BCF95E14027631CCDF /* Pods-UGSwiftMagicbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGSwiftMagicbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox.debug.xcconfig"; sourceTree = "<group>"; };
+		8450E42D22ADEC4800461802 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		8450E43522ADF9F200461802 /* 000.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 000.mp4; path = UGSwiftMagicbox/000.mp4; sourceTree = SOURCE_ROOT; };
 		CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGSwiftMagicbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -236,6 +240,8 @@
 		2C5B894022A0E5FB00AF2C8D /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				8450E43522ADF9F200461802 /* 000.mp4 */,
+				8450E42F22ADF73A00461802 /* mp4 */,
 				2C5B89B622A13CBE00AF2C8D /* jpg */,
 				2C5B89AD22A0EB4400AF2C8D /* live.gif */,
 			);
@@ -282,6 +288,7 @@
 				2C5B89E022A4B15C00AF2C8D /* NicknameInputView.swift */,
 				2C5B895C22A0E5FC00AF2C8D /* UGMessage.swift */,
 				2C5B895D22A0E5FC00AF2C8D /* UIView+exteension.swift */,
+				8450E42D22ADEC4800461802 /* LaunchView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -420,6 +427,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8450E42F22ADF73A00461802 /* mp4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mp4;
+			sourceTree = "<group>";
+		};
 		9353E62FC21F47709FAE7439 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +554,7 @@
 				2C5B891D22A0E5AE00AF2C8D /* LaunchScreen.storyboard in Resources */,
 				2C5B89D622A13CBF00AF2C8D /* 5.jpg in Resources */,
 				2C5B89CC22A13CBF00AF2C8D /* 14.jpg in Resources */,
+				8450E43622ADF9F300461802 /* 000.mp4 in Resources */,
 				2C5B89CB22A13CBF00AF2C8D /* 9.jpg in Resources */,
 				2C5B89D222A13CBF00AF2C8D /* 11.jpg in Resources */,
 				2C5B89D522A13CBF00AF2C8D /* 19.jpg in Resources */,
@@ -657,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5B899F22A0E5FE00AF2C8D /* VideoCollectionViewCell.swift in Sources */,
+				8450E42E22ADEC4800461802 /* LaunchView.swift in Sources */,
 				2C5B89DF22A4ADCD00AF2C8D /* DorTextFiedVC.swift in Sources */,
 				2C5B899822A0E5FE00AF2C8D /* LHCenterTabBar.swift in Sources */,
 				2C5B899622A0E5FE00AF2C8D /* UIView+exteension.swift in Sources */,

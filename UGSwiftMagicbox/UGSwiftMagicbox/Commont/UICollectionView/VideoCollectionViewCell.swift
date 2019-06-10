@@ -120,10 +120,12 @@ class VideoCollectionViewCell: UICollectionViewCell {
         videoimgView.contentMode = .scaleAspectFill
         videoimgView.clipsToBounds = true
     
+        
         videoimgView.snp.remakeConstraints { (make) in
             make.top.equalToSuperview()
             make.left.equalToSuperview()
-            make.size.equalTo(self.snp.width)
+            make.width.equalTo(self.snp.width)
+            make.bottom.equalToSuperview().offset(-20)
         }
         
         nickLab.snp.remakeConstraints { (make) in
@@ -147,8 +149,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
             make.bottom.equalToSuperview()
             make.left.equalToSuperview().offset(KPanding_12)
             make.right.equalToSuperview().offset(-KPanding_12)
-            make.top.equalTo(videoimgView.snp.bottom)
-     
+            make.height.equalTo(20)
         }
     }
     

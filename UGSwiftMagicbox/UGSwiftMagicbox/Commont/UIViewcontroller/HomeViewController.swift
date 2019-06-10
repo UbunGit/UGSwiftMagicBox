@@ -48,7 +48,7 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
                 pageHeadViewCell?.titleLab.textColor = .ug_rgba(r: textColor,g: textColor,b: textColor,a: 1)
             }
         }
-        let vc2 = HomeHotViewController()
+        let vc2 = WaterfallVC()
         vc2.view.backgroundColor = .white
         vc2.hotScrollViewDidScroll = {(collectionView) in
             

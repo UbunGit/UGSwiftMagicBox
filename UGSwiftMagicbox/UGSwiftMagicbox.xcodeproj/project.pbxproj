@@ -65,6 +65,8 @@
 		7366935EF91C3A76D1888917 /* Pods_UGSwiftMagicbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */; };
 		8450E42E22ADEC4800461802 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E42D22ADEC4800461802 /* LaunchView.swift */; };
 		8450E43622ADF9F300461802 /* 000.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8450E43522ADF9F200461802 /* 000.mp4 */; };
+		8450E43822AE16BE00461802 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43722AE16BE00461802 /* WaterfallVC.swift */; };
+		8450E43A22AE5B4E00461802 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43922AE5B4E00461802 /* WaterfallLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,8 @@
 		380100BCF95E14027631CCDF /* Pods-UGSwiftMagicbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGSwiftMagicbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox.debug.xcconfig"; sourceTree = "<group>"; };
 		8450E42D22ADEC4800461802 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		8450E43522ADF9F200461802 /* 000.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 000.mp4; path = UGSwiftMagicbox/000.mp4; sourceTree = SOURCE_ROOT; };
+		8450E43722AE16BE00461802 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		8450E43922AE5B4E00461802 /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGSwiftMagicbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -388,6 +392,8 @@
 			isa = PBXGroup;
 			children = (
 				2C5B89B322A0ED7800AF2C8D /* HomeHotViewController.swift */,
+				8450E43722AE16BE00461802 /* WaterfallVC.swift */,
+				8450E43922AE5B4E00461802 /* WaterfallLayout.swift */,
 				2C5B89B222A0ED7800AF2C8D /* HomeViewController.swift */,
 			);
 			path = UIViewcontroller;
@@ -687,6 +693,7 @@
 				2C5B899322A0E5FE00AF2C8D /* UIImage+Ex.swift in Sources */,
 				2C5B89B422A0ED7800AF2C8D /* HomeViewController.swift in Sources */,
 				2C5B89A922A0E5FE00AF2C8D /* ConfigDoraemon.swift in Sources */,
+				8450E43A22AE5B4E00461802 /* WaterfallLayout.swift in Sources */,
 				2C5B89A622A0E5FE00AF2C8D /* UITextField+Extension.swift in Sources */,
 				2C5B899722A0E5FE00AF2C8D /* UGTabBarController.swift in Sources */,
 				2C5B89AC22A0E5FE00AF2C8D /* ImageLableBtnView.swift in Sources */,
@@ -694,6 +701,7 @@
 				2C5B89A422A0E5FE00AF2C8D /* UINav+Extension.swift in Sources */,
 				2C5B89A022A0E5FE00AF2C8D /* Color+Exitension.swift in Sources */,
 				2C5B89E122A4B15C00AF2C8D /* NicknameInputView.swift in Sources */,
+				8450E43822AE16BE00461802 /* WaterfallVC.swift in Sources */,
 				2C5B89A122A0E5FE00AF2C8D /* UIFont_EX.swift in Sources */,
 				2C5B89AB22A0E5FE00AF2C8D /* CentanimateView.swift in Sources */,
 				2C5B89A522A0E5FE00AF2C8D /* NSobject+extension.swift in Sources */,

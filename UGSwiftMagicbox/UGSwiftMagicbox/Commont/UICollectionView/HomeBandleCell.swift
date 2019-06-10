@@ -35,10 +35,7 @@ class HomeBandleCell: UICollectionViewCell {
             let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.className, for: indexPath) as! VideoCollectionViewCell
             
             cell.backgroundColor = .ug_randomColor
-            cell.titleLab.text = "你愿意为我而停留不止..."
-            cell.nickLab.text = "我是大小姐"
-            cell.tagView.tagLab.text = "人气"
-            cell.backgroundColor = .ug_randomColor
+            cell.watchView.isHidden = true
             cell.tagView.isHidden = true
             let name = String(indexPath.row%20)
             
@@ -46,6 +43,11 @@ class HomeBandleCell: UICollectionViewCell {
             let url = URL(fileURLWithPath: filePath)
             cell.videoimgView.sd_setImage(with: url)
             cell.videoimgView.contentMode = .scaleAspectFill
+            cell.videoimgView.snp.remakeConstraints { (make) in
+                make.edges.equalToSuperview()
+            }
+            
+            
             return cell;
         }
         collectionView.sizeForItemAt = {(collectionView,layer,indexPath) in

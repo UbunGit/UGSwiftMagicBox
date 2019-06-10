@@ -49,7 +49,7 @@ class RecommendCollectionCell: UICollectionViewCell {
         }
         collectionView.sizeForItemAt = {(collectionView,layer,indexPath) in
             
-           return CGSize(width: 156, height: 194)
+           return CGSize(width: 156, height: 184)
   
         }
         collectionView.insetForSectionAt = {(collectionView,layer,section) in

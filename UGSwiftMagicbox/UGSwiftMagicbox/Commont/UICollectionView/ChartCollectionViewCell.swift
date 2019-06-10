@@ -32,7 +32,11 @@ class ChartCollectionViewCell: UICollectionViewCell {
         
         collectionView.cellForItemAtBlock = { (collectionView,indexPath) in
             let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.className, for: indexPath) as! VideoCollectionViewCell
-            
+            cell.watchView.isHidden = true
+            cell.tagView.isHidden = true
+            cell.videoimgView.snp.remakeConstraints { (make) in
+                make.edges.equalToSuperview()
+            }
             cell.backgroundColor = .ug_randomColor
             return cell;
         }

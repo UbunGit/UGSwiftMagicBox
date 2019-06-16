@@ -75,6 +75,34 @@ class DorLaunchViewvideo: NSObject,DoraemonPluginProtocol{
     
 }
 
+// 折线图
+class DorLineChartViewVC: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = LineChartViewVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+    
+}
+// 折线图
+class DorFontAwesome: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = FontAwesomeExampleVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+}
+
+// 折线图
+class DorloginwithPassword: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = LoginwithPasswordVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+    
+}
+
 
 
 

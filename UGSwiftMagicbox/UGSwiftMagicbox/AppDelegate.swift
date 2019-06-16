@@ -8,6 +8,12 @@
 
 import UIKit
 
+@_exported import RxSwift
+@_exported import RxCocoa
+@_exported import Charts
+@_exported import Realm
+@_exported import TABAnimated
+@_exported import FontAwesomeKit_Swift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

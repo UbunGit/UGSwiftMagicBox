@@ -13,14 +13,21 @@ import DoraemonKit
  */
 public func configDoraemon() -> () {
     
-  
     DoraemonManager.shareInstance().install()
+    doruisection()
+    dorcomsection()
+    dorothersection()
+}
+// UI测试
+func doruisection(){
     DoraemonManager.shareInstance().addPlugin(withTitle: "弹框", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.Dormsg", atModule: "UI")
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "动画", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorCommonView", atModule: "UI")
     
-     DoraemonManager.shareInstance().addPlugin(withTitle: "输入限制", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorTextFied", atModule: "UI")
-    
+    DoraemonManager.shareInstance().addPlugin(withTitle: "输入限制", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorTextFied", atModule: "UI")
+}
+// 常用功能
+func dorcomsection(){
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "突出tabbar", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorUGTabBarController", atModule: "功能测试")
     
@@ -30,8 +37,17 @@ public func configDoraemon() -> () {
     
     DoraemonManager.shareInstance().addPlugin(withTitle: "启动图片", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorLaunchView", atModule: "功能测试")
     
+     DoraemonManager.shareInstance().addPlugin(withTitle: "密码登陆", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorloginwithPassword", atModule: "功能测试")
+    
     DoraemonManager.shareInstance().addPlugin(withTitle: "注销", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.Dorsinout", atModule: "功能测试")
-  
+}
+//第三方测试
+func dorothersection(){
+    
+       DoraemonManager.shareInstance().addPlugin(withTitle: "折线图", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorLineChartViewVC", atModule: "第三方功能")
+    
+     DoraemonManager.shareInstance().addPlugin(withTitle: "FontAwesome", icon: "doraemon_netflow_list_select", desc: "用于app内部弹框测试", pluginName: "UGSwiftMagicbox.DorFontAwesome", atModule: "第三方功能")
+    
 }
 
 /**

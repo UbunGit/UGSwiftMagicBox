@@ -44,6 +44,8 @@ func KScale (value :CGFloat) -> CGFloat{
     return (value*kScreenWidth)/375
 }
 
+let disposeBag = DisposeBag()
+
 /// 是否是齐刘海屏
 ///
 /// - Returns: 是否是齐刘海屏

@@ -12,6 +12,9 @@ class PasswordContentView: UIView {
 
     let userNameinput = LoginInputView() //用户名输入框
     let passwordinput = LoginInputView() //密码输入框
+    let forgrtBtn = UIButton() //忘记密码
+    let singnBtn = UIButton() //注册
+    
     let commitBtn = UIButton()      //登陆按钮
     
     override init(frame: CGRect) {
@@ -64,8 +67,35 @@ class PasswordContentView: UIView {
             make.right.equalToSuperview().offset(-borderDefual)
             make.top.equalTo(passwordinput.snp.bottom).offset(cellheight)
             make.height.equalTo(cellheight)
+        }
+        //忘记密码
+        addSubview(forgrtBtn)
+        forgrtBtn.setTitle("忘记密码", for: .normal)
+        forgrtBtn.setTitleColor(.style_des, for: .normal)
+        forgrtBtn.titleLabel?.font = .systemFont(ofSize: 12)
+        forgrtBtn.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(commitBtn.snp.bottom).offset(borderDefual)
+            make.right.equalToSuperview().offset(-borderDefual)
+            make.height.equalTo(cellheight)
             make.bottom.equalToSuperview().offset(-borderDefual)
         }
+        
+        
+        //注册
+        addSubview(singnBtn)
+        singnBtn.setTitle("加入我们", for: .normal)
+        singnBtn.setTitleColor(.style_des, for: .normal)
+        singnBtn.titleLabel?.font = .systemFont(ofSize: 12)
+        singnBtn.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(commitBtn.snp.bottom).offset(borderDefual)
+            make.right.equalTo(forgrtBtn.snp.left).offset(-borderDefual)
+            make.height.equalTo(cellheight)
+            make.bottom.equalToSuperview().offset(-borderDefual)
+        }
+        
+       
   
         //用户名可用
         let usernameValid = userNameinput.inputTF.rx.text.orEmpty

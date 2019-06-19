@@ -39,6 +39,7 @@
 
 
 
+
 ## UIKit
 
 ### UIView
@@ -121,20 +122,16 @@ cornerImage(size:CGSize, radius:CGFloat, fillColor: UIColor, completion:@escapin
 
 ### 突出的tabbar
 
-<img src="./UGSwiftMagicbox/Document/img/tabbar.jpg" width = 320/>
+<img src="./UGSwiftMagicbox/Document/img/tabbar.jpg" width = 160/>
 
 <img src="./UGSwiftMagicbox/Document/img/tabbar.gif" width = 160/>
 
 
-
-
-
-
 ### pageView
 
-<img src="./UGSwiftMagicbox/Document/img/pageView.jpg" width = 320 />
+<img src="./UGSwiftMagicbox/Document/img/pageView.jpg" width = 160 />
 
 ### 启动广告
 
-<img src="./UGSwiftMagicbox/Document/img/launch.jpg" width = 320 />
-<img src="./UGSwiftMagicbox/Document/img/launchvideo.jpg" width = 320 />
+<img src="./UGSwiftMagicbox/Document/img/launch.jpg" width = 160 />
+<img src="./UGSwiftMagicbox/Document/img/launchvideo.jpg" width = 160 />

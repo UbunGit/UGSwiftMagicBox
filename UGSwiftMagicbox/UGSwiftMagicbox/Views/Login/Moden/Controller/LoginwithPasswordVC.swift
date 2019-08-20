@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class LoginwithPasswordVC: UIViewController {
     
@@ -17,6 +18,9 @@ class LoginwithPasswordVC: UIViewController {
     }
     
     func configui(){
+        
+      
+        
         title = "登陆"
         view.backgroundColor = .white
         view.addSubview(passwordCon)
@@ -42,5 +46,25 @@ class LoginwithPasswordVC: UIViewController {
                 })
             })
             .disposed(by: disposeBag)
+        
+        let starAnimationView = AnimationView()
+        starAnimationView.backgroundColor = .ug_randomColor
+        view.addSubview(starAnimationView)
+        
+        guard let path = Bundle.main.path(forResource: "data", ofType: "json") else {
+            fatalError("视频路径出错")
+        }
+        let starAnimation = Animation.filepath(path)
+//        let starAnimation = Animation.named("data")
+        starAnimationView.animation = starAnimation
+        starAnimationView.play { (finished) in
+            /// Animation finished
+        }
+        starAnimationView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(borderDefual)
+            make.right.equalToSuperview().offset(-borderDefual)
+            make.bottom.equalToSuperview().offset(-50)
+        }
     } 
 }

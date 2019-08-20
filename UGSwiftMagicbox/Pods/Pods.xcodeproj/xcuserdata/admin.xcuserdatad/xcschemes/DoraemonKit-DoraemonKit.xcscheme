@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D36B3058753C46B117AFBD4FEE75E2E4"
+               BlueprintIdentifier = "86F85BD17543B52E78020B4385A7C0C6"
                BuildableName = "DoraemonKit.bundle"
                BlueprintName = "DoraemonKit-DoraemonKit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D36B3058753C46B117AFBD4FEE75E2E4"
+            BlueprintIdentifier = "86F85BD17543B52E78020B4385A7C0C6"
             BuildableName = "DoraemonKit.bundle"
             BlueprintName = "DoraemonKit-DoraemonKit"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8CFD050B7C5CA9C511F67382C3C02FA"
+               BlueprintIdentifier = "61152BEC9F2DD095C0F867DD2904548E"
                BuildableName = "FontAwesomeKit.Swift.bundle"
                BlueprintName = "FontAwesomeKit.Swift-FontAwesomeKit.Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8CFD050B7C5CA9C511F67382C3C02FA"
+            BlueprintIdentifier = "61152BEC9F2DD095C0F867DD2904548E"
             BuildableName = "FontAwesomeKit.Swift.bundle"
             BlueprintName = "FontAwesomeKit.Swift-FontAwesomeKit.Swift"
             ReferencedContainer = "container:Pods.xcodeproj">

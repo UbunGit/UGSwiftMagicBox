@@ -38,6 +38,7 @@ PODS:
     - "UITextView+Placeholder"
   - fishhook (0.2)
   - FontAwesomeKit.Swift (1.0.2)
+  - lottie-ios (3.1.2)
   - MBProgressHUD (1.1.0)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
@@ -69,6 +70,7 @@ DEPENDENCIES:
   - DoraemonKit/WithLoad (~> 1.1.8)
   - DoraemonKit/WithLogger (~> 1.1.8)
   - FontAwesomeKit.Swift
+  - lottie-ios
   - MBProgressHUD
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -86,6 +88,7 @@ SPEC REPOS:
     - DoraemonKit
     - fishhook
     - FontAwesomeKit.Swift
+    - lottie-ios
     - MBProgressHUD
     - PNChart
     - Realm
@@ -102,12 +105,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
-  Charts: ec1f57f9340054155691e84d4544a1d239d382c5
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   ChartsRealm: cb13811d8dd54741688ce057dce3e2f7ae1b5ce1
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   DoraemonKit: 63d23b938b11ae2c04c8c2caba2112da7d5bda83
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FontAwesomeKit.Swift: cf839537bbff89b5853a00653b2a2f31748c2c1c
+  lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   Realm: 9b834e1be6062f544805252c812348872dc5d4ed
@@ -121,6 +125,6 @@ SPEC CHECKSUMS:
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
 
-PODFILE CHECKSUM: acb5e6bc4832c1b7f28dff18c07d90e1fdda51c6
+PODFILE CHECKSUM: 67ff31cd2d4ad5f4189d4027df80cde777298ec8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.4

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -77,6 +77,15 @@
 		8450E43822AE16BE00461802 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43722AE16BE00461802 /* WaterfallVC.swift */; };
 		8450E43A22AE5B4E00461802 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43922AE5B4E00461802 /* WaterfallLayout.swift */; };
 		8450E43E22B1DAF300461802 /* LineChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43D22B1DAF300461802 /* LineChartViewVC.swift */; };
+		84ADE5AB230C1FC700BE9215 /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A2230C1FC700BE9215 /* img_1.png */; };
+		84ADE5AC230C1FC700BE9215 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A3230C1FC700BE9215 /* img_0.png */; };
+		84ADE5AD230C1FC700BE9215 /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A4230C1FC700BE9215 /* img_2.png */; };
+		84ADE5AE230C1FC700BE9215 /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A5230C1FC700BE9215 /* img_3.png */; };
+		84ADE5AF230C1FC700BE9215 /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A6230C1FC700BE9215 /* img_6.png */; };
+		84ADE5B0230C1FC700BE9215 /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A7230C1FC700BE9215 /* img_4.png */; };
+		84ADE5B1230C1FC700BE9215 /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A8230C1FC700BE9215 /* img_5.png */; };
+		84ADE5B2230C1FC700BE9215 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5A9230C1FC700BE9215 /* data.json */; };
+		84ADE5B3230C1FC700BE9215 /* PingFang Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE5AA230C1FC700BE9215 /* PingFang Heavy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +183,15 @@
 		8450E43722AE16BE00461802 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		8450E43922AE5B4E00461802 /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		8450E43D22B1DAF300461802 /* LineChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewVC.swift; sourceTree = "<group>"; };
+		84ADE5A2230C1FC700BE9215 /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		84ADE5A3230C1FC700BE9215 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		84ADE5A4230C1FC700BE9215 /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
+		84ADE5A5230C1FC700BE9215 /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
+		84ADE5A6230C1FC700BE9215 /* img_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_6.png; sourceTree = "<group>"; };
+		84ADE5A7230C1FC700BE9215 /* img_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_4.png; sourceTree = "<group>"; };
+		84ADE5A8230C1FC700BE9215 /* img_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_5.png; sourceTree = "<group>"; };
+		84ADE5A9230C1FC700BE9215 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		84ADE5AA230C1FC700BE9215 /* PingFang Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Heavy.ttf"; sourceTree = "<group>"; };
 		CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGSwiftMagicbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -267,6 +285,7 @@
 		2C5B894022A0E5FB00AF2C8D /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				84ADE5A0230C1FC700BE9215 /* feiji */,
 				8450E43522ADF9F200461802 /* 000.mp4 */,
 				8450E42F22ADF73A00461802 /* mp4 */,
 				2C5B89B622A13CBE00AF2C8D /* jpg */,
@@ -575,6 +594,30 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		84ADE5A0230C1FC700BE9215 /* feiji */ = {
+			isa = PBXGroup;
+			children = (
+				84ADE5A1230C1FC700BE9215 /* images */,
+				84ADE5A9230C1FC700BE9215 /* data.json */,
+				84ADE5AA230C1FC700BE9215 /* PingFang Heavy.ttf */,
+			);
+			path = feiji;
+			sourceTree = "<group>";
+		};
+		84ADE5A1230C1FC700BE9215 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84ADE5A2230C1FC700BE9215 /* img_1.png */,
+				84ADE5A3230C1FC700BE9215 /* img_0.png */,
+				84ADE5A4230C1FC700BE9215 /* img_2.png */,
+				84ADE5A5230C1FC700BE9215 /* img_3.png */,
+				84ADE5A6230C1FC700BE9215 /* img_6.png */,
+				84ADE5A7230C1FC700BE9215 /* img_4.png */,
+				84ADE5A8230C1FC700BE9215 /* img_5.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		9353E62FC21F47709FAE7439 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -691,21 +734,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5B89D122A13CBF00AF2C8D /* 13.jpg in Resources */,
+				84ADE5B0230C1FC700BE9215 /* img_4.png in Resources */,
 				2C5B89CA22A13CBF00AF2C8D /* 8.jpg in Resources */,
 				2C5B891D22A0E5AE00AF2C8D /* LaunchScreen.storyboard in Resources */,
 				2C5B89D622A13CBF00AF2C8D /* 5.jpg in Resources */,
 				2C5B89CC22A13CBF00AF2C8D /* 14.jpg in Resources */,
+				84ADE5AB230C1FC700BE9215 /* img_1.png in Resources */,
+				84ADE5B3230C1FC700BE9215 /* PingFang Heavy.ttf in Resources */,
 				8450E43622ADF9F300461802 /* 000.mp4 in Resources */,
 				2C5B89CB22A13CBF00AF2C8D /* 9.jpg in Resources */,
+				84ADE5AF230C1FC700BE9215 /* img_6.png in Resources */,
 				2C5B89D222A13CBF00AF2C8D /* 11.jpg in Resources */,
 				2C5B89D522A13CBF00AF2C8D /* 19.jpg in Resources */,
 				2C5B891A22A0E5AE00AF2C8D /* Assets.xcassets in Resources */,
+				84ADE5B1230C1FC700BE9215 /* img_5.png in Resources */,
 				2C5B89D922A13CBF00AF2C8D /* 2.jpg in Resources */,
 				2C5B89CE22A13CBF00AF2C8D /* 17.jpg in Resources */,
 				2C5B89DA22A13CBF00AF2C8D /* 3.jpg in Resources */,
 				2C5B89DC22A13CBF00AF2C8D /* 0.jpg in Resources */,
 				2C5B89AE22A0EB4400AF2C8D /* live.gif in Resources */,
 				2C5B89D722A13CBF00AF2C8D /* 7.jpg in Resources */,
+				84ADE5AC230C1FC700BE9215 /* img_0.png in Resources */,
+				84ADE5AE230C1FC700BE9215 /* img_3.png in Resources */,
+				84ADE5B2230C1FC700BE9215 /* data.json in Resources */,
+				84ADE5AD230C1FC700BE9215 /* img_2.png in Resources */,
 				2C5B89DB22A13CBF00AF2C8D /* 1.jpg in Resources */,
 				2C5B89CF22A13CBF00AF2C8D /* 16.jpg in Resources */,
 				2C5B89D322A13CBF00AF2C8D /* 10.jpg in Resources */,
@@ -763,56 +815,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/BSBacktraceLogger/BSBacktraceLogger.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework",
-				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
-				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit.Swift/FontAwesomeKit_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework",
-				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework",
-				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSBacktraceLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TABAnimated.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1044,7 +1051,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SR367C2GB;
+				DEVELOPMENT_TEAM = LG55CZHSNP;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1063,7 +1070,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SR367C2GB;
+				DEVELOPMENT_TEAM = LG55CZHSNP;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

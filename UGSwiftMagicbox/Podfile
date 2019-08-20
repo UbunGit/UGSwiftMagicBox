@@ -14,7 +14,7 @@ def commonPods
     pod 'TABAnimated'
     pod 'FontAwesomeKit.Swift'
     pod 'Alamofire'
-    
+    pod 'lottie-ios'
     
 end
 

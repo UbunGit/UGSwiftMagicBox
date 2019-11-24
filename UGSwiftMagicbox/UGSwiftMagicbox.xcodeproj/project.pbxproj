@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -77,6 +77,7 @@
 		8450E43822AE16BE00461802 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43722AE16BE00461802 /* WaterfallVC.swift */; };
 		8450E43A22AE5B4E00461802 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43922AE5B4E00461802 /* WaterfallLayout.swift */; };
 		8450E43E22B1DAF300461802 /* LineChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E43D22B1DAF300461802 /* LineChartViewVC.swift */; };
+		849485B9238A3D3E00846F46 /* SharesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849485B8238A3D3E00846F46 /* SharesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,7 @@
 		8450E43722AE16BE00461802 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		8450E43922AE5B4E00461802 /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		8450E43D22B1DAF300461802 /* LineChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewVC.swift; sourceTree = "<group>"; };
+		849485B8238A3D3E00846F46 /* SharesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesViewController.swift; sourceTree = "<group>"; };
 		CD4FA71984B2051EB54B1577 /* Pods_UGSwiftMagicbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGSwiftMagicbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -467,6 +469,7 @@
 		841A546A22B2975D00774BEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				849485B6238A3CD300846F46 /* Shares  */,
 				841A546B22B2978A00774BEE /* Login */,
 				841A547322B29B5B00774BEE /* ConfigStyle.swift */,
 			);
@@ -573,6 +576,22 @@
 				8450E43D22B1DAF300461802 /* LineChartViewVC.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		849485B6238A3CD300846F46 /* Shares  */ = {
+			isa = PBXGroup;
+			children = (
+				849485B7238A3D0C00846F46 /* Controller */,
+			);
+			path = "Shares ";
+			sourceTree = "<group>";
+		};
+		849485B7238A3D0C00846F46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849485B8238A3D3E00846F46 /* SharesViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9353E62FC21F47709FAE7439 /* Pods */ = {
@@ -763,56 +782,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/BSBacktraceLogger/BSBacktraceLogger.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework",
-				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
-				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit.Swift/FontAwesomeKit_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework",
-				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework",
-				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSBacktraceLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TABAnimated.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-UGSwiftMagicbox/Pods-UGSwiftMagicbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -829,6 +803,7 @@
 				2C5B899F22A0E5FE00AF2C8D /* VideoCollectionViewCell.swift in Sources */,
 				8449466822B4B7830097C391 /* UGUIButton.swift in Sources */,
 				8449467522B4E0B70097C391 /* LoginContentView.swift in Sources */,
+				849485B9238A3D3E00846F46 /* SharesViewController.swift in Sources */,
 				8449467122B4C54F0097C391 /* LoginAPI.swift in Sources */,
 				8450E42E22ADEC4800461802 /* LaunchView.swift in Sources */,
 				2C5B89DF22A4ADCD00AF2C8D /* DorTextFiedVC.swift in Sources */,
@@ -1044,7 +1019,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SR367C2GB;
+				DEVELOPMENT_TEAM = LG55CZHSNP;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1063,7 +1038,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SR367C2GB;
+				DEVELOPMENT_TEAM = LG55CZHSNP;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

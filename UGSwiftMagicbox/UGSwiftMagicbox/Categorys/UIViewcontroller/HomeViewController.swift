@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  FlowerLive
 //
-//  Created by 杨西川 on 2019/5/22.
+//  Created by UbunGit on 2019/5/22.
 //  Copyright © 2019 lhwl-cee. All rights reserved.
 //
 
@@ -80,6 +80,7 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
         // pageviewController
         
         navigationController?.navigationBar.isTranslucent = true
+        view.backgroundColor = UIColor.ug_randomColor
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         pageViewController.dataSource = self
@@ -88,7 +89,7 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
         self.view.addSubview(pageViewController.view)
         
         // 头部
-        
+        view.addSubview(homePageHeadView)
         homePageHeadView.numberOfItemsInSection = { (collectionView,section) in
             return self.allViewControllers.count
         }
@@ -114,7 +115,7 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
             return CGSize(width: 68, height: 44)
         }
        
-        navigationController?.view.addSubview(homePageHeadView)
+//        navigationController?.view.addSubview(homePageHeadView)
         
         homePageHeadView.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(10)

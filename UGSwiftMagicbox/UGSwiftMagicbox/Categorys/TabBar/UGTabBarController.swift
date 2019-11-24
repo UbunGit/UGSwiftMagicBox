@@ -32,8 +32,10 @@ class UGTabBarController: UITabBarController {
     }
 
     func createChildController() {
-        addChildVC(childVc: UIViewController(), title: "0", image: "tab_ic_home_normal", selectedImage: "tab_ic_home_selected")
-        addChildVC(childVc: UIViewController(), title: "1", image: "tab_ic_rooms_normal", selectedImage: "tab_ic_rooms_selected")
+        // 首页
+        addChildVC(childVc: HomeViewController(), title: "0", image: "tab_ic_home_normal", selectedImage: "tab_ic_home_selected")
+        // 股票评估
+        addChildVC(childVc: SharesViewController(), title: "1", image: "tab_ic_rooms_normal", selectedImage: "tab_ic_rooms_selected")
         setCenterBtn()
         addChildVC(childVc: UIViewController(), title: "3", image: "tab_ic_dynamic_normal", selectedImage: "tab_ic_dynamic_selected")
         addChildVC(childVc: UIViewController(), title: "4", image: "tab_ic_me_normal", selectedImage: "tab_ic_me_selected")
@@ -83,7 +85,7 @@ class UGTabBarController: UITabBarController {
     }
 
     func addChildVC(childVc: UIViewController, title:String, image: String, selectedImage: String) {
-        childVc.view.backgroundColor = .ug_randomColor
+    
         let nav = UINavigationController(rootViewController: childVc)
         let normalImage = UIImage(named: image)
         let selectedImage = UIImage(named: selectedImage)
@@ -137,76 +139,6 @@ class UGTabBarController: UITabBarController {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
-        // 隐藏中间按钮弹出的框
-        centanimateView.hidden()
-        
-        let index = tabBar.items?.lastIndex(of: item)
-        if lastindex ==  index{
-            return
-        }
-        //找到对应的view添加动画
-        let tabBarButtons = NSMutableArray()
-        for subV in tabBar.subviews {
-            if subV.isKind(of: NSClassFromString("UITabBarButton")!) {
-                tabBarButtons.add(subV)
-            }
-        }
-        
-        let selectabBarButton = tabBarButtons.object(at: index!) as! UIView
-        var selectimg :UIImage?
-        var defualimg :UIImage?
-        switch index {
-        case 0:
-            selectimg = UIImage(named: "tab_ic_home_selected")
-            defualimg = UIImage(named: "tab_ic_home_normal")
-            break
-        case 1:
-            selectimg = UIImage(named: "tab_ic_rooms_selected")
-            defualimg = UIImage(named: "tab_ic_rooms_normal")
-            break
-        case 2:
-            selectimg = UIImage(named: "tab_ic_dynamic_selected")
-            defualimg = UIImage(named: "tab_ic_dynamic_normal")
-            break
-        case 3:
-            selectimg = UIImage(named: "tab_ic_me_selected")
-            defualimg = UIImage(named: "tab_ic_me_normal")
-            break
-        default: break
-            
-        }
-
-
-        UIView.animate(withDuration: 0.35, animations: {
-        
-            selectabBarButton.center.y -= 40
-            selectabBarButton.alpha = 0
-        }) { (_) in
-            
-            selectabBarButton.center.y += 80
-            UIView.animate(withDuration: 0.35, animations: {
-                selectabBarButton.center.y -= 40
-                selectabBarButton.alpha = 1
-            })
-        }
-        //之前item的动画
-        let lastBarButton = tabBarButtons.object(at: lastindex) as! UIView
-        
-        
-        UIView.animate(withDuration: 0.35, animations: {
-
-            lastBarButton.center.y += 40
-            lastBarButton.alpha = 0
-        }) { (_) in
-            
-            lastBarButton.center.y -= 80
-            UIView.animate(withDuration: 0.35, animations: {
-                lastBarButton.center.y += 40
-                lastBarButton.alpha = 1
-            })
-        }
-        lastindex = index ?? 0
-
     }
     
     deinit {

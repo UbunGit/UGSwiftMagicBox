@@ -9,7 +9,7 @@
 import UIKit
 
 class BlockCollectionView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-   
+    
     typealias DidSelectItemBlock = (UICollectionView, IndexPath) ->  ()
     typealias CellForItemAtBlock = (UICollectionView, IndexPath) ->  (UICollectionViewCell)
     typealias NumberOfItemsInSection = (UICollectionView, Int) ->  Int
@@ -32,7 +32,7 @@ class BlockCollectionView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     
     var index: IndexPath = IndexPath(row: 0, section: 0) {
         didSet{
-        
+            
             collection.scrollToItem(at: index , at: .centeredHorizontally, animated: true);
         }
     }
@@ -74,7 +74,7 @@ class BlockCollectionView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let block = numberOfItemsInSection {
             
-           return block(collectionView,section)
+            return block(collectionView,section)
         }
         return 8
     }
@@ -82,10 +82,10 @@ class BlockCollectionView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let block = cellForItemAtBlock{
-
+            
             return block(collectionView,indexPath)
         }
-       
+        
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: PageHeadViewCell.className, for: indexPath) as! PageHeadViewCell
         return cell;
     }
@@ -106,7 +106,7 @@ class BlockCollectionView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         if let block = insetForSectionAt {
-           return block(collectionView, collectionViewLayout, section)
+            return block(collectionView, collectionViewLayout, section)
         }
         return .zero
     }
@@ -137,11 +137,8 @@ class PageHeadViewCell: UICollectionViewCell {
     func configDefaultUI(){
         titleLab.textColor = .white
         titleLab.font = .boldSystemFont(ofSize: 22)
+        self.ug_radius(radius: 5)
         
-        titleLab.snp.remakeConstraints { (make) in
-            make.left.top.equalToSuperview()
-            make.right.bottom.equalToSuperview()
-        }
     }
     var _isSelected = false
     override var isSelected: Bool {
@@ -156,6 +153,13 @@ class PageHeadViewCell: UICollectionViewCell {
         }
         get{
             return _isSelected
+        }
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLab.snp.remakeConstraints { (make) in
+            make.left.top.equalToSuperview()
+            make.right.bottom.equalToSuperview()
         }
     }
     required init?(coder aDecoder: NSCoder) {

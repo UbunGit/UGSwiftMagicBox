@@ -44,13 +44,16 @@ func KScale (value :CGFloat) -> CGFloat{
     return (value*kScreenWidth)/375
 }
 
+let disposeBag = DisposeBag()
+
 /// 是否是齐刘海屏
 ///
 /// - Returns: 是否是齐刘海屏
 public func IsiPhoneNotchScreen() -> Bool {
     var iPhoneNotchDirectionSafeAreaInsets: CGFloat = 0
     if #available(iOS 11.0, *) {
-        let safeAreaInsets: UIEdgeInsets = UIApplication.shared.windows[0].safeAreaInsets
+        let window = UIApplication.shared.keyWindow
+        let safeAreaInsets: UIEdgeInsets = window?.safeAreaInsets ?? UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         switch (UIApplication.shared.statusBarOrientation) {
         case .portrait:do {
             iPhoneNotchDirectionSafeAreaInsets = safeAreaInsets.top

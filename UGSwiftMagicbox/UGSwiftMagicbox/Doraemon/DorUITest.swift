@@ -51,6 +51,59 @@ class DorTextFied: NSObject,DoraemonPluginProtocol{
     
 }
 
+// 启动广告
+class DorLaunchView: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+         DoraemonManager.shareInstance().hiddenHomeWindow()
+        let launchView = LaunchView(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
+        launchView.setupUI()
+        
+    }
+    
+}
+// 启动广告
+class DorLaunchViewvideo: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+         DoraemonManager.shareInstance().hiddenHomeWindow()
+        let launchView = LaunchView(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
+        launchView.setupVideoUI()
+       
+
+    }
+    
+}
+
+// 折线图
+class DorLineChartViewVC: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = LineChartViewVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+    
+}
+// 折线图
+class DorFontAwesome: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = FontAwesomeExampleVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+}
+
+// 折线图
+class DorloginwithPassword: NSObject,DoraemonPluginProtocol{
+    
+    func pluginDidLoad() {
+        let viewcontroller = LoginwithPasswordVC()
+        DoraemonUtil.openPlugin(viewcontroller)
+    }
+    
+}
+
+
 
 
 

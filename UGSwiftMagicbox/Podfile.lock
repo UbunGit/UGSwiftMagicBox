@@ -1,28 +1,35 @@
 PODS:
+  - Alamofire (4.9.1)
   - BSBacktraceLogger (0.0.1)
-  - CocoaLumberjack (3.5.3):
-    - CocoaLumberjack/Core (= 3.5.3)
-  - CocoaLumberjack/Core (3.5.3)
-  - CocoaLumberjack/Swift (3.5.3):
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - ChartsRealm (3.4.0):
+    - Charts (~> 3.4.0)
+    - RealmSwift (~> 3.18.0)
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack/Swift (3.6.0):
     - CocoaLumberjack/Core
-  - DoraemonKit/Core (1.1.8):
+  - DoraemonKit/Core (1.1.9):
     - BSBacktraceLogger
     - fishhook
     - PNChart
     - "UITextView+Placeholder"
-  - DoraemonKit/WithGPS (1.1.8):
-    - BSBacktraceLogger
-    - DoraemonKit/Core
-    - fishhook
-    - PNChart
-    - "UITextView+Placeholder"
-  - DoraemonKit/WithLoad (1.1.8):
+  - DoraemonKit/WithGPS (1.1.9):
     - BSBacktraceLogger
     - DoraemonKit/Core
     - fishhook
     - PNChart
     - "UITextView+Placeholder"
-  - DoraemonKit/WithLogger (1.1.8):
+  - DoraemonKit/WithLoad (1.1.9):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithLogger (1.1.9):
     - BSBacktraceLogger
     - CocoaLumberjack
     - DoraemonKit/Core
@@ -30,65 +37,95 @@ PODS:
     - PNChart
     - "UITextView+Placeholder"
   - fishhook (0.2)
+  - FontAwesomeKit.Swift (1.0.2)
   - MBProgressHUD (1.1.0)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
-  - RxCocoa (5.0.0):
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
+  - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.0):
+  - RxRelay (5.0.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
-  - SDWebImage (5.0.3):
-    - SDWebImage/Core (= 5.0.3)
-  - SDWebImage/Core (5.0.3)
-  - SnapKit (5.0.0)
+  - RxSwift (5.0.1)
+  - SDWebImage (5.3.2):
+    - SDWebImage/Core (= 5.3.2)
+  - SDWebImage/Core (5.3.2)
+  - SnapKit (5.0.1)
+  - TABAnimated (2.2.5):
+    - TABAnimated/Core (= 2.2.5)
+    - TABAnimated/Reveal (= 2.2.5)
+  - TABAnimated/Core (2.2.5)
+  - TABAnimated/Reveal (2.2.5):
+    - TABAnimated/Core
   - UICountingLabel (1.2.0)
-  - "UITextView+Placeholder (1.2.1)"
+  - "UITextView+Placeholder (1.3.3)"
 
 DEPENDENCIES:
+  - Alamofire
+  - ChartsRealm
   - CocoaLumberjack/Swift
   - DoraemonKit/Core (~> 1.1.8)
   - DoraemonKit/WithGPS (~> 1.1.8)
   - DoraemonKit/WithLoad (~> 1.1.8)
   - DoraemonKit/WithLogger (~> 1.1.8)
+  - FontAwesomeKit.Swift
   - MBProgressHUD
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SDWebImage
   - SnapKit
+  - TABAnimated
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - Alamofire
     - BSBacktraceLogger
+    - Charts
+    - ChartsRealm
     - CocoaLumberjack
     - DoraemonKit
     - fishhook
+    - FontAwesomeKit.Swift
     - MBProgressHUD
     - PNChart
+    - Realm
+    - RealmSwift
     - RxCocoa
     - RxRelay
     - RxSwift
     - SDWebImage
     - SnapKit
+    - TABAnimated
     - UICountingLabel
     - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
-  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  DoraemonKit: 63d23b938b11ae2c04c8c2caba2112da7d5bda83
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  ChartsRealm: 2ae8bf478211a94b3b6dd20738db0b9b132eb66b
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  DoraemonKit: efea4a8afe0a6f2aadffcf5e66010bff692c6f05
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  FontAwesomeKit.Swift: cf839537bbff89b5853a00653b2a2f31748c2c1c
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TABAnimated: 578e519350a12ac08ec2ee2c0a2d2120ac13e137
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  "UITextView+Placeholder": c407b27599ea23cca425946fee3cf1db5d547008
 
-PODFILE CHECKSUM: dc503b7ca100b14e74b4677204fa6fb64f661c55
+PODFILE CHECKSUM: acb5e6bc4832c1b7f28dff18c07d90e1fdda51c6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0.beta.1

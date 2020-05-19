@@ -10,6 +10,11 @@ def commonPods
     pod 'SDWebImage'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
+    pod 'ChartsRealm'
+    pod 'TABAnimated'
+    pod 'FontAwesomeKit.Swift'
+    pod 'Alamofire'
+    
     
 end
 

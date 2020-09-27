@@ -69,7 +69,6 @@
 		8449466322B2A8AC0097C391 /* FontAwesomeExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449466222B2A8AC0097C391 /* FontAwesomeExampleVC.swift */; };
 		8449466822B4B7830097C391 /* UGUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449466722B4B7830097C391 /* UGUIButton.swift */; };
 		8449466A22B4B82D0097C391 /* UGAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449466922B4B82D0097C391 /* UGAlert.swift */; };
-		8449466F22B4BC390097C391 /* UGRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449466E22B4BC390097C391 /* UGRequest.swift */; };
 		8449467122B4C54F0097C391 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449467022B4C54F0097C391 /* LoginAPI.swift */; };
 		8449467522B4E0B70097C391 /* LoginContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449467422B4E0B70097C391 /* LoginContentView.swift */; };
 		8450E42E22ADEC4800461802 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E42D22ADEC4800461802 /* LaunchView.swift */; };
@@ -167,7 +166,6 @@
 		8449466222B2A8AC0097C391 /* FontAwesomeExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeExampleVC.swift; sourceTree = "<group>"; };
 		8449466722B4B7830097C391 /* UGUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGUIButton.swift; sourceTree = "<group>"; };
 		8449466922B4B82D0097C391 /* UGAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGAlert.swift; sourceTree = "<group>"; };
-		8449466E22B4BC390097C391 /* UGRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGRequest.swift; sourceTree = "<group>"; };
 		8449467022B4C54F0097C391 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 		8449467422B4E0B70097C391 /* LoginContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContentView.swift; sourceTree = "<group>"; };
 		8450E42D22ADEC4800461802 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 		2C5B891122A0E5AA00AF2C8D /* UGSwiftMagicbox */ = {
 			isa = PBXGroup;
 			children = (
-				8449466D22B4BC170097C391 /* Request */,
 				8449466022B2A83C0097C391 /* LibTest */,
 				841A546A22B2975D00774BEE /* Views */,
 				2C5B897C22A0E5FE00AF2C8D /* Animate */,
@@ -546,14 +543,6 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		8449466D22B4BC170097C391 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				8449466E22B4BC390097C391 /* UGRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
 		8449467622B4E5290097C391 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,7 +816,6 @@
 				2C5B89A922A0E5FE00AF2C8D /* ConfigDoraemon.swift in Sources */,
 				8450E43A22AE5B4E00461802 /* WaterfallLayout.swift in Sources */,
 				2C5B89A622A0E5FE00AF2C8D /* UGUITextField.swift in Sources */,
-				8449466F22B4BC390097C391 /* UGRequest.swift in Sources */,
 				2C5B899722A0E5FE00AF2C8D /* UGTabBarController.swift in Sources */,
 				2C5B89AC22A0E5FE00AF2C8D /* ImageLableBtnView.swift in Sources */,
 				2C5B89A322A0E5FE00AF2C8D /* String+Extension.swift in Sources */,
@@ -948,7 +936,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1003,7 +991,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1019,7 +1007,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LG55CZHSNP;
+				DEVELOPMENT_TEAM = CPXTZSW87R;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1038,7 +1026,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LG55CZHSNP;
+				DEVELOPMENT_TEAM = CPXTZSW87R;
 				INFOPLIST_FILE = UGSwiftMagicbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

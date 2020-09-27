@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UGSwiftbox
+import Alamofire
 
 class LoginwithPasswordVC: UIViewController {
     
@@ -31,7 +33,7 @@ class LoginwithPasswordVC: UIViewController {
         passwordCon.commitBtn.rx.tap
             .subscribe(onNext:{
                 self.view.endEditing(true)
-                UGRequest.loginpassword(usetname: self.passwordCon.userNameinput.inputTF.text!,
+                AF.loginpassword(usetname: self.passwordCon.userNameinput.inputTF.text!,
                                         password: self.passwordCon.passwordinput.inputTF.text!,
                                         finesh: { (error, datadic) in
                     if(error != nil){

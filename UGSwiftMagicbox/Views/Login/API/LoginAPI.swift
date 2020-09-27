@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UGSwiftbox
+import Alamofire
 
-extension UGRequest{
+extension Session{
     
-    class func loginpassword(usetname:String, password:String, finesh:@escaping finesh) {
+    func loginpassword(usetname:String, password:String, finesh:@escaping finesh) {
         let url = basturl + "/user/passwordlogin"
       
         let parameters = ["phone":usetname,"password":password]
-        UGRequest().ug_request(url,method: .post, parameters: parameters, finesh: finesh)
+        AF.ug_request(url,method: .post, parameters: parameters, finesh: finesh)
     }
 }
+

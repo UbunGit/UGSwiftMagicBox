@@ -8,7 +8,7 @@
 
 import Foundation
 
-let borderDefual = 8.0
+let borderDefual = 15.0
 let lineheight = 0.5
 let cellheight = 44
 let radiusnomal :CGFloat = 4.0
@@ -31,6 +31,7 @@ extension UIColor {
     public class var style_defual: UIColor{
         return .ug_rgba(r: 136, g: 230, b: 222, a: 1)
     }
+ 
 }
 
 

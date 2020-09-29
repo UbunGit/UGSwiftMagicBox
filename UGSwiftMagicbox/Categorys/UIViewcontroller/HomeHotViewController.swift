@@ -121,15 +121,12 @@ class HomeHotViewController: UIViewController {
                 block(collectionView)
             }
             
-            let aplat = collectionView.contentOffset.y/200
-        self.navigationController?.navigationBar.setBackgroundImage(UIColor.ug_toImage(color: .ug_rgba(r: 255,g: 255,b: 255,a: aplat)), for: .default)
-            
         }
 
         view.addSubview(collectionView)
     
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: -kNavigationHeight, left: 0, bottom: 0, right: 0))
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: -kStatusBarHeight, left: 0, bottom: 0, right: 0))
         }
     }
     

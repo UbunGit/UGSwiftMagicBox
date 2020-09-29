@@ -137,6 +137,7 @@ class PageHeadViewCell: UICollectionViewCell {
     func configDefaultUI(){
         titleLab.textColor = .white
         titleLab.font = .boldSystemFont(ofSize: 22)
+        titleLab.layer.zPosition = 100;
         self.ug_radius(radius: 5)
         
     }

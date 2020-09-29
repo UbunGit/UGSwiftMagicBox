@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C5B892222A0E5AE00AF2C8D"
+               BuildableName = "UGSwiftMagicboxTests.xctest"
+               BlueprintName = "UGSwiftMagicboxTests"
+               ReferencedContainer = "container:UGSwiftMagicbox.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C5B892D22A0E5AE00AF2C8D"
+               BuildableName = "UGSwiftMagicboxUITests.xctest"
+               BlueprintName = "UGSwiftMagicboxUITests"
+               ReferencedContainer = "container:UGSwiftMagicbox.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

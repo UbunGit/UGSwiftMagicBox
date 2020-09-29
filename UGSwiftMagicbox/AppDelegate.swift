@@ -14,6 +14,7 @@ import UIKit
 @_exported import Realm
 @_exported import TABAnimated
 @_exported import FontAwesomeKit_Swift
+@_exported import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configDoraemon()
         //配置日志
         configLog()
+        IQKeyboardManager.shared.enable = true
         let launchView = LaunchView(frame: (window?.bounds)!)
         launchView.setupUI()
         return true

@@ -21,10 +21,10 @@ def doraemonPods
     
     pod 'CocoaLumberjack/Swift'
 
-    pod 'DoraemonKit/Core', '~> 1.1.8'
-    pod 'DoraemonKit/WithLogger', '~> 1.1.8'
-    pod 'DoraemonKit/WithGPS', '~> 1.1.8'
-    pod 'DoraemonKit/WithLoad', '~> 1.1.8'
+    pod 'DoraemonKit/Core'
+    pod 'DoraemonKit/WithLogger'
+    pod 'DoraemonKit/WithGPS'
+    pod 'DoraemonKit/WithLoad'
     
 end
 
@@ -35,6 +35,15 @@ end
 
 
 target 'UGSwiftMagicbox' do
+    commonPods #开源
+    doraemonPods #本地
+    debugPods #Debug
+    
+    pod 'UGSwiftbox' ,:path=>'./UGSwiftbox.podspec'
+    
+end
+
+target 'Bilibili' do
     commonPods #开源
     doraemonPods #本地
     debugPods #Debug

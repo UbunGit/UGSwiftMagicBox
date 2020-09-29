@@ -131,7 +131,7 @@ extension LaunchView{
         
         addSubview(skipBtn)
         skipBtn.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(30)
+            make.top.equalToSuperview().offset(safeAreaInsets.top)
             make.right.equalToSuperview().offset(-25)
             make.size.equalTo(CGSize(width: 80, height: 30))
         }

@@ -22,8 +22,10 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
         let vc0 = HomeHotViewController()
         vc0.hotScrollViewDidScroll = {(collectionView) in
             
-            let aplat = collectionView.contentOffset.y/200
-            var navimage = UIImage(named: "home_img_bg2")?.imageWithalpha(aplat)
+            var aplat =  collectionView.contentOffset.y/200
+            aplat = (aplat<1) ? aplat : 1
+            let image = UIColor.ug_toImage(color: .black)
+            var navimage = image.imageWithalpha(aplat)
             
             self.navigationController?.navigationBar.setBackgroundImage(navimage, for: .default)
             
@@ -31,15 +33,16 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
             for cell in self.homePageHeadView.collection.visibleCells {
                 var pageHeadViewCell = cell as? PageHeadViewCell
                 pageHeadViewCell?.titleLab.textColor = .ug_rgba(r: textColor,g: textColor,b: textColor,a: 1)
+             
             }
         }
         let vc1 = HomeHotViewController()
         vc1.view.backgroundColor = .white
         vc1.hotScrollViewDidScroll = {(collectionView) in
             
-            let aplat = collectionView.contentOffset.y/200
+            var aplat = collectionView.contentOffset.y/200
+            aplat = (aplat<1) ? aplat : 1
             var navimage = UIImage(named: "home_img_bg2")?.imageWithalpha(aplat)
-            
             self.navigationController?.navigationBar.setBackgroundImage(navimage, for: .default)
             
             let textColor = (1-aplat)*255
@@ -52,7 +55,8 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
         vc2.view.backgroundColor = .white
         vc2.hotScrollViewDidScroll = {(collectionView) in
             
-            let aplat = collectionView.contentOffset.y/200
+            var aplat = collectionView.contentOffset.y/200
+            aplat = (aplat<1) ? aplat : 1
             var navimage = UIImage(named: "home_img_bg2")?.imageWithalpha(aplat)
             
             self.navigationController?.navigationBar.setBackgroundImage(navimage, for: .default)
@@ -66,21 +70,25 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
         return [vc0,vc1,vc2]
     }()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationController?.navigationBar.isTranslucent = false
         configDefaultUI()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+ 
     
     func configDefaultUI(){
         // pageviewController
         
-        navigationController?.navigationBar.isTranslucent = true
-        view.backgroundColor = UIColor.ug_randomColor
+        
+        view.backgroundColor = UIColor(named: "background2")
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         pageViewController.dataSource = self
@@ -115,7 +123,6 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
             return CGSize(width: 68, height: 44)
         }
        
-//        navigationController?.view.addSubview(homePageHeadView)
         
         homePageHeadView.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(10)
@@ -185,8 +192,7 @@ class HomeViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
             return nil
         }
     }
-    
-    
+
   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         

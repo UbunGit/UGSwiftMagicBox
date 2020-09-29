@@ -17,11 +17,23 @@ Pod::Spec.new do |s|
   s.default_subspec = 'All'
   s.subspec 'All' do |spec|
     spec.ios.dependency 'UGSwiftbox/request'
+    spec.ios.dependency 'UGSwiftbox/extension'
+    spec.ios.dependency 'UGSwiftbox/swiftUI'
   end
   
   s.subspec 'request' do |spec|
     spec.ios.dependency 'Alamofire'
-    s.source_files = 'Source/Request/*.swift'
+    spec.source_files = 'Source/request/**/*.swift'
+  end
+  
+  s.subspec 'extension' do |spec|
+    spec.ios.dependency "MBProgressHUD"
+    spec.ios.dependency "SnapKit"
+    spec.source_files = 'Source/extension/**/*.swift'
+  end
+  
+  s.subspec 'swiftUI' do |spec|
+    spec.source_files = 'Source/swiftUI/**/*.swift'
   end
   
     # s.frameworks = 'CFNetwork'

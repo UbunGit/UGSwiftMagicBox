@@ -89,9 +89,7 @@ extension WaterfallVC{
         if let block = self.hotScrollViewDidScroll{
             block(scrollView as! UICollectionView)
         }
-        
-        let aplat = scrollView.contentOffset.y/200
-        self.navigationController?.navigationBar.setBackgroundImage(UIColor.ug_toImage(color: .ug_rgba(r: 255,g: 255,b: 255,a: aplat)), for: .default)
+
     }
   
 }

@@ -21,11 +21,14 @@ public extension DataRequest{
             case .success(let value):
                 
                 let tResult = value as! NSDictionary
-                if(tResult["code"] as? Int != 200){
+                print("返回码: \(value)")
+                if(tResult["code"] as? Int != 200 && tResult["code"] as? Int != 0){
                     finesh(NSError.init(domain: tResult["message"] as? String ?? "错误", code: tResult["code"] as? Int ?? -1, userInfo: nil), nil)
+                }else{
+                    finesh(nil, tResult["data"] as? NSDictionary)
                 }
-                finesh(nil, tResult["data"] as? NSDictionary)
-                print("code: \(value)")
+                
+                
                 
             case .failure(let error):
                 finesh(NSError.init(domain: error.localizedDescription , code: -1, userInfo: nil),nil)

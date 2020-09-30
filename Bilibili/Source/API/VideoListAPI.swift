@@ -24,12 +24,16 @@ extension Session{
             if(error != nil){
                 finesh(error, nil)
             }else{
-                let jsonDic = (datadic?["list"] != nil) ? datadic?["list"] : []
-                let jsonDecoder = JSONDecoder()
-                let jsonData = try? JSONSerialization.data(withJSONObject: jsonDic as Any, options: [])
-                let videos:[VideoListModel]? = try! jsonDecoder.decode([VideoListModel].self, from: jsonData!)
-                finesh(nil, videos)
-                
+
+                do{
+                    let jsonDic = (datadic?["list"] != nil) ? datadic?["list"] : []
+                    let jsonData = try JSONSerialization.data(withJSONObject: jsonDic as Any, options: [])
+                    let videos = try JSONDecoder().decode([VideoListModel].self, from: jsonData)
+                    finesh(nil, videos)
+                }
+                catch {
+                    finesh(error as NSError, nil)
+                }
             }
          })
     }

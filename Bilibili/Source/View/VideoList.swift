@@ -12,61 +12,57 @@ import WaterfallGrid
 import SDWebImageSwiftUI
 
 struct VideoList: View {
+    
+    @State var videoList: [VideoListModel]?
+    
     init(){
-         UITableView.appearance().backgroundColor = .clear
-         UITableViewCell.appearance().backgroundColor = .clear
-         //若不要row分隔线的话：
-         UITableView.appearance().separatorStyle = .none
-     }
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
+        //若不要row分隔线的话：
+        UITableView.appearance().separatorStyle = .none
+    }
 
-
-    
-    @State var videoList:[VideoListModel]?
-    
     func getvideos()  {
         AF.api_videoList(finesh:{ (error, results) in
-            self.videoList = results
+            if((error) != nil){
+                print(error?.description as Any)
+            }else{
+                self.videoList = results
+            }
         })
     }
     var body: some View {
-//                    ZStack {
-//                        Color("background2")
-//                            .edgesIgnoringSafeArea(.all)
-                        
-                        
+        
         NavigationView {
-
-                List{
+            
+            List{
+                
+                ForEach(0..<(self.videoList?.count ?? 0) , id: \.self) { index in
+//                ForEach(self.videoList?, id: \.self) { index in
                     
-                    ForEach(0..<(self.videoList?.count ?? 0) , id: \.self) { index in
-                        ZStack{
-                            VideoCell(video: self.videoList?[index])
-                            
-                            NavigationLink(destination: WebBrowser(address:self.videoList?[index].url ?? "") ) {
-                                
-                                EmptyView()
-                            }
-                            
-                        }
-                    }
-              
-                    .listRowBackground(
-                        Color("background3"))
-                    .background(Color("background3"))
-                    .animation(.spring())
-                   
+                    VideoCell(video: self.videoList?[index])
+//                    VideoCell(video: index)
+                    
+                    
                 }
-          
-                .onAppear(perform: {
-                    self.getvideos()
-                })
-                .navigationBarTitle("Text")
+                
+                .listRowBackground(
+                    Color("background3"))
+                .background(Color("background3"))
+                .animation(.spring())
+                
             }
             
-            
+            .onAppear(perform: {
+                self.getvideos()
+            })
+            .navigationBarTitle("Text")
         }
         
-//    }
+        
+    }
+    
+    //    }
 }
 
 struct VideoList_Previews: PreviewProvider {
@@ -74,3 +70,7 @@ struct VideoList_Previews: PreviewProvider {
         VideoList()
     }
 }
+
+
+
+
